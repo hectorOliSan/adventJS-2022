@@ -10,3 +10,4 @@
 | 4   | [Una caja dentro de otra caja y otra...](https://adventjs.dev/es/challenges/2022/4)            | 🟡 Medio    | [Solución](./retos/Reto4.md) | <img src="https://adventjs.dev/challenges-2022/4.svg" width="70" /> | 183    |
 | 5   | [Optimizando viajes de Santa](https://adventjs.dev/es/challenges/2022/5)                       | 🔴 Difícil  | [Solución](./retos/Reto5.md) | <img src="https://adventjs.dev/challenges-2022/5.svg" width="70" /> | 201    |
 | 6   | [Creando adornos navideños](https://adventjs.dev/es/challenges/2022/6)                         | 🟡 Medio    | [Solución](./retos/Reto6.md) | <img src="https://adventjs.dev/challenges-2022/6.svg" width="70" /> | 160    |
+| 7   | [Haciendo inventario de regalos](https://adventjs.dev/es/challenges/2022/7)                    | 🟢 Fácil    | [Solución](./retos/Reto7.md) | <img src="https://adventjs.dev/challenges-2022/7.svg" width="70" /> | 400    |
