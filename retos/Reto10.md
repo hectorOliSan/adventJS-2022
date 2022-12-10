@@ -50,6 +50,6 @@ function checkJump(heights) {
   const s = heights.splice(0, heights.indexOf(Math.max(...heights)))
   const subida = s.slice(1).every((h, i) => h >= s[i]);
   const bajada = heights.slice(1).every((h, i) => h <= heights[i]);
-  return subida && bajada && s.length > 0 && heights.length > 1
+  return subida && bajada && s.length > 0 && heights.length > 1;
 }
 ```
