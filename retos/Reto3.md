@@ -9,30 +9,31 @@ Santa Claus también tiene una lista de renos que pueden ayudarlo a entregar los
 Tu tarea es implementar una función `distributeGifts(packOfGifts, reindeers)` que recibe una caja de regalos y una lista de renos y devuelve el número máximo de cajas de estos regalos que Santa Claus puede entregar a los niños. **Las cajas de regalos no se pueden dividir**.
 
 ```js
-const packOfGifts = ["book", "doll", "ball"]
-const reindeers = ["dasher", "dancer"]
+const packOfGifts = ["book", "doll", "ball"];
+const reindeers = ["dasher", "dancer"];
 
 // el pack de regalos pesa 4 + 4 + 4 = 12
 // los renos pueden llevar (2 * 6) + (2 * 6) = 24
 // por lo tanto, Santa Claus puede entregar 2 cajas de regalos
 
-distributeGifts(packOfGifts, reindeers) // 2
+distributeGifts(packOfGifts, reindeers); // 2
 ```
 
 Cosas a tener en cuenta:
 
- - Las cajas de regalos no se pueden dividir.
+- Las cajas de regalos no se pueden dividir.
 
- - Los nombres de los regalos y los renos siempre serán mayores que 0.
+- Los nombres de los regalos y los renos siempre serán mayores que 0.
 
 ## **Solución :**
 
-### 198 puntos
+### 127 puntos
 
 ```js
-distributeGifts = (packOfGifts, reindeers) => {
-  const p = packOfGifts.join('').length;
-  const r = reindeers.join('').length * 2;
-  return parseInt(r / p)
+function distributeGifts(packOfGifts, reindeers) {
+  const r = reindeers.join("").length * 2;
+  const p = packOfGifts.join("").length;
+  const gifts = parseInt(r / p);
+  return gifts;
 }
 ```
