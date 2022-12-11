@@ -30,14 +30,13 @@ Ah, **y no modifiques (mutes) el array original**.
 
 ## **Solución :**
 
-### 132 puntos
+### 131 puntos
 
 ```js
-wrapping = (gifts) => {
+function wrapping(gifts) {
   return gifts.map((gift) => {
-    const l = gift.length + 2;
-    const a = "*".repeat(l);
-    return `${a}\n*${gift}*\n${a}`;
-  });
-};
+    const a = "*".repeat(gift.length + 2);
+    return `${a}\n*${gift}*\n${a}`
+  })
+}
 ```
