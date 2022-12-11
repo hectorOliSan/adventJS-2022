@@ -31,10 +31,11 @@ Cosas a tener en cuenta y consejos:
 
 ## **Solución :**
 
-### 122 puntos
+### 121 puntos
 
 ```js
-countHours = (year, holidays) => {
-  return holidays.filter(day => new Date(`${year}/${day}`).getDay() % 6 != 0).length * 2;
+function countHours(year, holidays) {
+  return holidays.filter(day =>
+    new Date(`${year}/${day}`).getDay() % 6 != 0).length * 2;
 }
 ```
