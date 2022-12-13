@@ -27,13 +27,10 @@ Cosas a tener en cuenta:
 
 ## **Solución :**
 
-### 127 puntos
+### 175 puntos
 
 ```js
 function distributeGifts(packOfGifts, reindeers) {
-  const r = reindeers.join("").length * 2;
-  const p = packOfGifts.join("").length;
-  const gifts = parseInt(r / p);
-  return gifts;
+  return ((reindeers.join``.length * 2) / packOfGifts.join``.length) >> 0;
 }
 ```
