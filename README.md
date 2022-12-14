@@ -17,3 +17,4 @@
 | 11  | [Papá Noel es Scrum Master](https://adventjs.dev/es/challenges/2022/11)                        | 🔴 Difícil  | [Solución](./retos/Reto11.md) | <img src="https://adventjs.dev/challenges-2022/11.svg" width="70" /> | 320    |
 | 12  | [Trineas eléctricos, ¡guau!](https://adventjs.dev/es/challenges/2022/12)                       | 🟡 Medio    | [Solución](./retos/Reto12.md) | <img src="https://adventjs.dev/challenges-2022/12.svg" width="70" /> | 400    |
 | 13  | [Backup de los archivos de Papá Noel](https://adventjs.dev/es/challenges/2022/13)              | 🟢 Fácil    | [Solución](./retos/Reto13.md) | <img src="https://adventjs.dev/challenges-2022/13.svg" width="70" /> | 300    |
+| 14  | [El mejor camino](https://adventjs.dev/es/challenges/2022/14)                                  | 🟡 Medio    | [Solución](./retos/Reto14.md) | <img src="https://adventjs.dev/challenges-2022/14.svg" width="70" /> | 300    |
