@@ -23,3 +23,5 @@
 | 17  | [Llevando los regalos en sacos](https://adventjs.dev/es/challenges/2022/17)                    | 🟡 Medio    | [Solución](./retos/Reto17.md) | <img src="https://adventjs.dev/challenges-2022/17.svg" width="70" /> | 260    |
 | 18  | [¡Nos quedamos sin tinta!](https://adventjs.dev/es/challenges/2022/18)                         | 🟢 Fácil    | [Solución](./retos/Reto18.md) | <img src="https://adventjs.dev/challenges-2022/18.svg" width="70" /> | 200    |
 | 19  | [Ordenando los regalos](https://adventjs.dev/es/challenges/2022/19)                            | 🟢 Fácil    | [Solución](./retos/Reto19.md) | <img src="https://adventjs.dev/challenges-2022/19.svg" width="70" /> | 400    |
+| 20  | [Más viajes retadores](https://adventjs.dev/es/challenges/2022/20)                             | 🔴 Difícil  | [Solución](./retos/Reto20.md) | <img src="https://adventjs.dev/challenges-2022/20.svg" width="70" /> | 200    |
+| 21  | [Creando la tabla de regalos](https://adventjs.dev/es/challenges/2022/21)                      | 🟡 Medio    | [Solución](./retos/Reto21.md) | <img src="https://adventjs.dev/challenges-2022/21.svg" width="70" /> | 300    |
