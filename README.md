@@ -26,4 +26,4 @@
 | 20  | [Más viajes retadores](https://adventjs.dev/es/challenges/2022/20)                             | 🔴 Difícil  | [Solución](./retos/Reto20.md) | <img src="https://adventjs.dev/challenges-2022/20.svg" width="70" /> | 200    |
 | 21  | [Creando la tabla de regalos](https://adventjs.dev/es/challenges/2022/21)                      | 🟡 Medio    | [Solución](./retos/Reto21.md) | <img src="https://adventjs.dev/challenges-2022/21.svg" width="70" /> | 300    |
 | 22  | [La iluminación en sintonía](https://adventjs.dev/es/challenges/2022/22)                       | 🟢 Fácil    | [Solución](./retos/Reto22.md) | <img src="https://adventjs.dev/challenges-2022/22.svg" width="70" /> | 360    |
-| 23  | [Compilador de Papá Noel](https://adventjs.dev/es/challenges/2022/23)                          | 🔴 Difícil  | [Solución](./retos/Reto23.md) | <img src="https://adventjs.dev/challenges-2022/23.svg" width="70" /> | 10     |
+| 23  | [Compilador de Papá Noel](https://adventjs.dev/es/challenges/2022/23)                          | 🔴 Difícil  | [Solución](./retos/Reto23.md) | <img src="https://adventjs.dev/challenges-2022/23.svg" width="70" /> | 120    |
