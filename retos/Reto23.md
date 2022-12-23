@@ -58,41 +58,54 @@ Basado en la entrevista técnica de SpaceX de CodeSignal
 
 ## **Solución :**
 
-### 10 puntos
+### 120 puntos
 
 ```js
 function executeCommands(commands) {
-  let operation = 0;
-  let VXX = { V00: 0, V01: 0, V02: 0, V03: 0, V04: 0, V05: 0, V06: 0, V07: 0 };
+  const MAX_VALUE = 256;
 
-  const CMDS = {
-    MOV: (a, b) => {
-      const num = Number(a);
-      if (isNaN(num)) VXX[b] = VXX[a];
-      else VXX[b] = num;
+  const run = (action, i) => {
+    const [command, args] = action.split(" ");
+    const commandArgs = args
+      .split(",")
+      .map((a) => a.replace(/V(\d+)/, (_, p1) => `V0${p1 % 8}`));
+    actions[command](...commandArgs, i);
+  };
+
+  const registries = {
+    V00: 0,
+    V01: 0,
+    V02: 0,
+    V03: 0,
+    V04: 0,
+    V05: 0,
+    V06: 0,
+    V07: 0,
+  };
+  const actions = {
+    MOV: (value, id) => {
+      let r = +value;
+      registries[id] = r;
+      value[0] === "V" && (registries[id] = registries[value]);
     },
-    ADD: (a, b) => {
-      VXX[a] = (VXX[a] + VXX[b]) % 256;
+    ADD: (value1, value2) => {
+      registries[value1] =
+        (registries[value1] + registries[value2]) % MAX_VALUE;
     },
-    DEC: (a) => {
-      VXX[a]--;
-      if (VXX[a] < 0) VXX[a] += 256;
+    DEC: (value1) => {
+      registries[value1] = (registries[value1] - 1 + MAX_VALUE) % MAX_VALUE;
     },
-    INC: (a) => {
-      VXX[a] = (VXX[a] + 1) % 256;
+    INC: (value1) => {
+      registries[value1] = (registries[value1] + 1) % MAX_VALUE;
     },
-    JMP: (i) => {
-      if (VXX["V00"]) operation = i - 1;
+    JMP: (i, idx) => {
+      registries.V00 > 0 &&
+        commands.slice(i, idx + 1).forEach((c) => run(c, idx));
     },
   };
 
-  while (operation < commands.length) {
-    const command = commands[operation];
-    const [cmd, sargs] = command.split(" ");
-    CMDS[cmd].apply(null, sargs.split(","));
-    operation++;
-  }
+  commands.forEach(run);
 
-  return Object.values(VXX);
+  return Object.values(registries);
 }
 ```
